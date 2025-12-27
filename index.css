@@ -79,17 +79,30 @@ ul {
 }
 
 /* --- Hero Section --- */
+/* --- Hero Section (Top Banner) --- */
 .hero {
-    height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1514525253440-b393452e8d26?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-    background-size: cover;
-    background-position: center;
+    /* Height: 100vh means it covers 100% of the screen height */
+    height: 100vh; 
+    
+    /* This adds a dark tint over the image so the white text pops */
+    /* REPLACE 'banner.jpg' with your actual file name if different */
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('banner.jpg');
+    
+    /* This ensures the image covers the whole area without stretching weirdly */
+    background-size: cover; 
+    
+    /* This keeps the image centered */
+    background-position: center; 
+    
+    /* Flexbox centers the text in the middle of the banner */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: white;
-    padding-top: 60px;
+    
+    /* Adjust for the fixed navbar so content doesn't hide behind it */
+    padding-top: 60px; 
 }
 
 .hero h1 {
@@ -297,4 +310,5 @@ footer {
     .about-image {
         order: -1; /* Image on top for mobile */
     }
+
 }
