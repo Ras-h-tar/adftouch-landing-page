@@ -54,6 +54,54 @@ ul {
     color: var(--primary-gold);
 }
 
+/* --- Logo & Header Enhancements --- */
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-logo {
+    height: 50px; /* Adjust based on preference */
+    width: auto;
+    filter: drop-shadow(0 0 5px rgba(247, 213, 96, 0.3));
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: var(--kkr-gold);
+}
+
+/* --- Hero Centerpiece Logo --- */
+.hero-crest {
+    width: 180px; /* Elegant centerpiece size */
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 15px rgba(247, 213, 96, 0.4));
+    animation: fadeInScale 1.2s ease-out;
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Ensure Hero content is stacked vertically */
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .nav-links {
     display: flex;
     gap: 30px;
@@ -312,3 +360,4 @@ footer {
     }
 
 }
+
